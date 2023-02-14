@@ -1,6 +1,12 @@
 document.getElementById('bold').addEventListener ('click', function () {
 
-    document.getElementById("input").style.fontWeight = 'bold';
+    const textArea = document.getElementById('input');
+
+    if (textArea.style.fontWeight === 'bold') {
+        textArea.style.fontWeight = 'normal';
+      } else {
+        textArea.style.fontWeight = 'bold';
+      }
 
     
 
@@ -13,9 +19,20 @@ document.getElementById('bold').addEventListener ('click', function () {
 
 })
 
+
+
+
+
+
 document.getElementById ('italic').addEventListener ('click', function () {
 
-    document.getElementById("input").style.fontStyle = "italic";
+    const textArea = document.getElementById('input');
+
+    if (textArea.style.fontStyle === 'italic') {
+        textArea.style.fontStyle = 'normal';
+      } else {
+        textArea.style.fontStyle = 'italic';
+      }
 
 
 
@@ -28,8 +45,13 @@ document.getElementById ('italic').addEventListener ('click', function () {
 
 document.getElementById ('underline').addEventListener ('click', function () {
 
-    document.getElementById("input").style.textDecoration = "underline";
+    const textArea = document.getElementById('input');
 
+    if (textArea.style.textDecoration === 'underline') {
+        textArea.style.textDecoration = 'none';
+      } else {
+        textArea.style.textDecoration = 'underline';
+      }
 
 
 
